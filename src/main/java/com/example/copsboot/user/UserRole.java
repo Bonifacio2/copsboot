@@ -1,6 +1,6 @@
 package com.example.copsboot.user;
 
-public Enum UserRole {
+public enum UserRole {
     OFFICER,
     CAPTAIN,
     ADMIN
