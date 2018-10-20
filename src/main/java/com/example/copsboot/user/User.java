@@ -1,10 +1,11 @@
-package main.java.com.example.copsboot.user;
-
+package com.example.copsboot.user;
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.Set;
 import java.util.UUID;
 
 @Entity
-@Table("copsboot_user")
+@Table(name = "copsboot_user")
 public class User {
     @Id
     private UUID id;
