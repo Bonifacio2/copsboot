@@ -1,13 +1,25 @@
-package com.example.copsboot.user;
+package main.java.com.example.copsboot.user;
 
 import java.util.Set;
 import java.util.UUID;
 
+@Entity
+@Table("copsboot_user")
 public class User {
+    @Id
     private UUID id;
+
     private String email;
     private String password;
+
+    @ElementCollection(fetch = FetchType.EAGER)
+    @Enumerated(EnumType.STRING)
+    @NotNull
     private Set<UserRole> roles;
+
+    protected User() {
+
+    }
 
     public User(UUID id, String email, String password, Set<UserRole> roles) {
         this.id = id;

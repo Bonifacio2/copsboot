@@ -1,4 +1,4 @@
-package com.example.copsboot.user;
+package main.java.com.example.copsboot.user;
 
 public enum UserRole {
     OFFICER,
